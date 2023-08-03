@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .container {
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(rgb(100, 171, 100), rgb(154, 37, 37));
+    box-sizing: border-box;
+    display: flex;
+    font-weight: 400;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    white-space: normal;
+    width: 100vw;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    }
+    img{
+        width: 100px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    button:hover {
+        transform: scale(1.2);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+        <button onclick="Paralelepipedo()" onmouseleave="sair()" onmouseenter="entrar()">Paralelepipedo <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/07/elementos-paralelepipedo.jpg" alt=""></button>
+
+        <button onclick="Paralelepipedo()">Cicindro <img src="https://s2.static.brasilescola.uol.com.br/be/2022/10/cilindro-reto.jpg" alt=""></button>
+
+        <button onclick="Paralelepipedo()">Pirâmide <img src="https://blogdoenem.com.br/apostilas/MDIII_Matematica_geometricos_sergio-web-resources/image/figura_35_opt.jpeg" alt=""></button>
+
+        <button onclick="Paralelepipedo()">Cone <img src="https://static.todamateria.com.br/upload/56/95/569546707c398-cone.jpg?auto_optimize=low" alt=""></button>
+
+        <button onclick="Paralelepipedo()">Prisma <img src="https://realizeeducacao.com.br/wp-content/uploads/2020/03/elementos-prismas-generico-octagonal.png" alt=""></button>
+
+        <button onclick="Paralelepipedo()">Esfera <img src="https://matematicabasica.net/wp-content/uploads/2019/02/esfera-1.png" alt=""></button>
+        
+    </div>
+    <br>
+    <div id="container-principal"></div>
+    <div id="container">
+        <p id="output"></p>
+        <input id="raio" type="number" placeholder="Raio metros">
+        <input id="altura" type="number" placeholder="Altura metros">
+        <button id="button">Calcular</button>
+    </div>
+    </div>
+    <script src="java.js" type="text/javascript">
+        let propDiv=document.querySelector(".container")
+    </script>
+</body>
+</html>
